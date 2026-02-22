@@ -1,0 +1,42 @@
+/* For Entire HTML Page (Global Scope) */
+:root {
+  --button-color: hsl(0, 0%, 0%);
+  --root-margin: 20px;
+  --root-padding: 50px;
+  --page-color: #c3ff00;
+}
+
+/* .global-container {
+    visibility: hidden;
+} */
+
+.head {
+  padding: var(--root-padding);
+  border: 1px solid black;
+  margin: var(--root-margin);
+}
+
+.para {
+  background-color: var(--page-color);
+  color: var(--button-color);
+}
+
+/* Local Scope  */
+/* we can't use local scope in global scope */
+.local-container {
+  --local-margin: 10px;
+  --local-padding: 10px;
+  --local-bgc: #ff0099;
+
+  border: 1px solid black;
+  background-color: var(--local-bgc);
+  /* fallback value  */
+  background-color: var(--local-bgc, yellow);
+  margin: var(--local-margin);
+  padding: var(--local-padding);
+}
+
+/* not apply on element out of scope  */
+/* .para-3 {
+  margin: var(--local-bgc);
+} */

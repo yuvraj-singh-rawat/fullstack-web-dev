@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 📌 Common Breakpoint Sizes (Industry Standard)
+Device	        Width
+Mobile Small	320px
+Mobile Large	480px
+Tablet	        768px
+Laptop	        1024px
+Desktop	        1200px+ */
+
+/* @media - Responsive CSS likhne ka tareeka
+max-width - Screen width kam ya barabar hone par style
+min-width - Screen width zyada ya barabar hone par style
+orientation - Portrait ya landscape ke liye style
+hover - Hover support check karne ke liye */
+
+.container {
+  display: flex;
+}
+
+.box {
+  flex: 1;
+  padding: 50px;
+  background: lightblue;
+  border: 2px solid black;
+  text-align: center;
+}
+
+/* 🔥 Media Query */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .box {
+    background-color: blue;
+  }
+}
+
+/* Merge Both in One  */
+@media (min-width: 400px) and (max-width: 800px) {
+  .container {
+    background-color: rgb(0, 255, 0);
+    border: 5px solid rgb(0, 0, 0);
+    color: red;
+  }
+}
+
+/* for Height  */
+@media (min-height: 200px) and (max-height: 600px) {
+  .box1 {
+    background-color: red;
+    border: 3px solid gray;
+    color: yellow;
+  }
+}
+
+/* Orientation  */
+@media (orientation: landscape) {
+  .box1 {
+    background-color: red;
+    border: 3px solid gray;
+    color: yellow;
+  }
+}
+
+/* Hover  */
+.button {
+  border: 1px solid red;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 50px;
+  background-color: rgb(173, 218, 106);
+}
+
+/* Device that support hover  */
+@media (hover: hover) {
+  .button:hover {
+    background-color: rgb(0, 255, 0);
+    color: white;
+  }
+}
+
+/* Device that not support hover  */
+@media (hover: none) {
+  .button {
+    background-color: red;
+    color: white;
+  }
+}

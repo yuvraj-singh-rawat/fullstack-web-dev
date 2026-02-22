@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 2000px;
+}
+
+/* Static */
+.static {
+  position: static;
+  width: 200px;
+  height: 100px;
+  background: lightblue;
+  top: 50px; /* Kaam nahi karega */
+}
+
+/* Relative */
+.relative {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background: orange;
+  top: 50px;
+  left: 50px;
+}
+
+/* Absolute */
+.parent {
+  width: 200px;
+  height: 200px;
+  background: rgb(252, 109, 109);
+  position: relative;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background: rgb(0, 255, 68);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* Fixed */
+.fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: green;
+  color: white;
+  padding: 10px 20px;
+}
+
+/* Sticky */
+.sticky {
+  position: sticky;
+  top: 0;
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  background: red;
+  position: absolute;
+  z-index: 1;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background: blue;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 2;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Practise</title>
+    <style>
+      body {
+        background-color: #ffffff;
+        color: #000000;
+        font-family: "Poppins", sans-serif;
+        transition: all 0.4s ease;
+      }
+
+      .container {
+        text-align: center;
+        margin-top: 100px;
+      }
+
+      /* Dark Mode Styling */
+      .dark-mode {
+        background-color: #1e1e1e;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="head">Document Object Model</h1>
+
+    <div class="container">
+      <h1>Change Theme Color</h1>
+      <button id="modeBtn">Switch to Dark Mode</button>
+    </div>
+
+    <h3>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+      facere!
+    </h3>
+
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut doloribus
+      facere excepturi blanditiis velit voluptate, sint fuga rem accusantium
+      tempore!
+    </p>
+
+    <span class="demo"
+      >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident,
+      accusantium delectus non quidem eligendi perspiciatis vel consequatur
+      explicabo nisi placeat ab officiis reprehenderit, nesciunt fugit aliquam
+      dolorem quis quae praesentium, quisquam dolorum! Fugiat eligendi eum
+      officia, labore inventore dicta, dolore animi unde ad tenetur ipsum natus
+      aliquam amet iste quae atque aut officiis, facilis molestiae. Quam, quo
+      beatae culpa expedita minus, odit accusantium animi reiciendis deserunt
+      nesciunt maxime labore ratione aliquam corporis laborum explicabo quisquam
+      dicta harum facere hic. Incidunt consectetur sequi animi natus illum,
+      delectus neque iste iusto quibusdam recusandae eveniet. Cupiditate eius
+      possimus nemo ipsum beatae! Consequatur, ab.</span
+    >
+
+    <button id="btn">Click Here</button>
+
+    <div id="my-container"></div>
+
+    <button id="clickButton">Click Me</button>
+
+    <script src="index.js"></script>
+    <script>
+      const button = document.getElementById("clickButton");
+      const container = document.getElementById("my-container");
+
+      let count = 1;
+
+      button.addEventListener("click", () => {
+        const el = document.createElement("li");
+        el.innerText = count;
+        container.appendChild(el);
+        count++;
+      });
+    </script>
+  </body>
+</html>

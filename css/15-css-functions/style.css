@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  padding: 20px;
+  padding-top: 100px;
+
+  & > * {
+    flex: 1 1 250px;
+  }
+}
+
+div {
+  padding: 10px;
+}
+
+/* Function Syntax */
+/* @function --name() {
+
+} */
+
+@function --dashed-border(--color: red) {
+  result: 2px dashed var(--color);
+}
+
+.argument {
+    border: --dashed-border(blue);
+}
+
+.default {
+    border: --dashed-border();
+}

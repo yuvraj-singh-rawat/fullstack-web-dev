@@ -1,0 +1,35 @@
+* {
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* 1st Step => Define Animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(720deg);
+  }
+}
+
+/* 2nd Step of Animation */
+.container {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+
+  /* animation: name duration timing-function delay iteration-count direction fill-mode */
+  animation: spin 1s infinite;
+
+  /* animation-name: spin;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: 5;
+  animation-direction: reverse; 
+  animation-fill-mode: forwards;
+  */
+}

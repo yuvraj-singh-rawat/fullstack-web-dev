@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  /* display: none; */
+
+  /* visibility: hidden; */
+}
+
+span {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}

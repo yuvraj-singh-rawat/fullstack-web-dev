@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  /* column-count: 2;
+  column-width: 200px; */
+  columns: 2 200px;
+}
