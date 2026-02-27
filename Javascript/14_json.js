@@ -1,4 +1,4 @@
-// JSON - JS Object Notation (AJAJ)
+// JSON - Javascript Object Notation (AJAJ)
 
 // json() method - return a second promise that resolves with the result of parsing the response body text as JSON (input is JSON, output is JS object)
 

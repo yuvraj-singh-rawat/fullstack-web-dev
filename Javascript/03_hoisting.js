@@ -2,8 +2,8 @@
 
 //  *********** Example with var ***************
 
-var a; // internally a is declared if without defining var a
 console.log(a); // undefined
+var a; // internally a is declared if without defining var a
 var a = 12;
 console.log(a); // 12
 

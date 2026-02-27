@@ -1,13 +1,13 @@
 // Variables in JavaScript
 
 // 1. Declaration
-let name; 
+let name;
 
 // 2. Initialization            
 name = "Yuvraj"; // Assigning a value to the variable
 
 // 3. Declaration and Initialization in one step
-let age = 25; 
+let age = 25;
 
 
 // Three types of variables in JavaScript

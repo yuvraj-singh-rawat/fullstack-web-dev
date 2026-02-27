@@ -250,8 +250,6 @@ console.log(sym1 === sym2); // true because global symbol uses same key
 
 
 
-
-
 // Date Object
 
 let timeNow = new Date();
@@ -259,12 +257,6 @@ console.log(timeNow);
 
 let timeStamp = Date.now();
 console.log(timeStamp);
-
-
-
-
-
-
 
 
 
