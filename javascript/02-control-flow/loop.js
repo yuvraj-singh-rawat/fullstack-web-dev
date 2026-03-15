@@ -1,10 +1,10 @@
-// ============= Loops: while and for =============
+// Loops: while and for
 
 // 1. While loop
 // it executes the block of code as long as the condition is true.
 let i = 0;
 while (i < 10) {
-    console.log("Jai Shree Ram");
+    console.log("Hello World");
     i++;
 };
 
@@ -36,7 +36,7 @@ for (; z < 5;) {
 
 
 
-// 4. for in loop - Iterates over the enumerable property names (keys) of an object.
+// 4. For in loop - Iterates over the enumerable property names (keys) of an object.
 // It can also be used to iterate over the indices of an array.
 const user = {
     name: "yuvraj",
@@ -52,7 +52,8 @@ for (let key in user) {
 
 
 
-// 5. for of loop - Iterates over iterable values — like arrays, strings, maps, sets, etc.
+
+// 5. For of loop - Iterates over iterable values — like arrays, strings, maps, sets, etc.
 // It cannot be used to iterate over the properties of an object.
 
 // array

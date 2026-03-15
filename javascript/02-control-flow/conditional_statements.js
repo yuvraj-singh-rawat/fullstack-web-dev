@@ -45,7 +45,6 @@ if (age3 >= 18) {
 
 
 // 5. Switch Case Statement
-
 let vals = 1;
 
 switch (vals) {
@@ -59,6 +58,7 @@ switch (vals) {
         console.log("Rawat");
 };
 
+
 // 6. Truthy & Falsy Values
 // Falsy - false, 0, "", null, undefined, NaN
 
@@ -70,10 +70,12 @@ if ("hello") {
     console.log("This will run");
 }
 
+
 // 7. Ternary Operator
 let age4 = 18;
 let canVote = age4 >= 18 ? "Yes, you can vote." : "No, you cannot vote.";
 console.log(canVote); // Yes, you can vote.
+
 
 // 8. Optional Chaining -> ?.
 // Used to access deeply nested object properties without having to check if each reference in the chain is valid.

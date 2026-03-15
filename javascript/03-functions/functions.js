@@ -1,3 +1,7 @@
+// Function : A function is a block of code that is executed when the function is called.
+
+// A function expression refers to a function definition that exists as an expression and not as a standalone statement.
+
 // First Class Functions
 // Functions are treated as first-class citizens in JavaScript. This means that functions can be assigned to variables, passed as arguments to other functions, and returned from other functions.
 
@@ -5,6 +9,7 @@ var b = function (a) {
     return function c() {
     }
 }
+
 console.log(b()); // returns function c(){}
 
 
@@ -57,13 +62,32 @@ greet(); // Hello Guest
 greet("Yuvraj"); // Hello Yuvraj
 
 
+function multiple(a, b = 1) {
+    return a * b;
+}
+
+console.log(multiple(5, 3)); // 15
+console.log(multiple(5)); // 5
+
+
 // Rest Parameter
 // it allows a function to accept an indefinite number of arguments as an array.
-function sumAll(...nums) {
-    return nums.reduce((a, b) => a + b, 0);
+let arri = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function sumAll(...arri) {
+    return arri.reduce((a, b) => a + b, 0);
 }
 
 console.log(sumAll(1, 2, 3, 4, 5, 6)); // 21
+
+
+// IIFE (Immediately Invoked Function Expression)
+// function that is called immediately as soon as it is defined
+
+(function () {
+    console.log("abc");
+}) ();
+
+
 
 
 // Function inside Function (Nested)
@@ -72,9 +96,12 @@ function outer() {
     function inner() {
         console.log("I am inner");
     }
-    inner();
+    inner(); // I am inner
 }
-outer();
+outer(); // I am outer
+
+
+
 
 
 // High Order Functions -> functions who takes another functions as an arguments(callback), return a function as its result.
@@ -91,6 +118,10 @@ function process(callback) { // Process is HOF it takes greet as an Argument
 console.log(process(greet)); // Hello Yuvraj
 
 
+
+
+
+
 // Spread Operator in Functions
 function sumV2(...numbers) {
     let ans = 0;
@@ -101,6 +132,11 @@ function sumV2(...numbers) {
 }
 
 console.log(sumV2(1, 2, 3, 4, 5, 6)); // 21
+
+
+
+
+
 
 // Unlimited Arguments
 function sum() {

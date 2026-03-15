@@ -1,6 +1,6 @@
 // Operators
 
-// 1. ---- Arithmetic Operator ----
+// 1. Arithmetic Operator
 let u = 10, b = 3;
 console.log(u - b);  // 7
 console.log(u + b);  // 13
@@ -22,7 +22,8 @@ console.log(x--);  // 5 (First use then Decrement)
 
 
 
-// 2. ---- Assignment Operators ----
+
+// 2. Assignment Operators
 let k = 10;
 
 k += 5;
@@ -34,7 +35,11 @@ k **= 2; // k = k ** 2 = 10 ^ 2 = 100
 
 console.log(k);
 
-// 3. ---- Comparison Operators ----
+
+
+
+
+// 3. Comparison Operators
 
 console.log(10 == "10");   // true (Only Value Compare)
 console.log(10 === "10");  // false (Strictly Compare Value and Type)
@@ -42,10 +47,19 @@ console.log(5 != "5");    // false  (Only Value Compare)
 console.log(5 !== "5");    // true (Strictly Compare Value and Type)
 console.log(5 > 3);        // true
 
-// 4. ---- Logical Operators ---- 
+
+// The Object.is() static method determines whether two values are the same value.
+let val1 = 12;
+let val2 = "12";
+console.log(Object.is(val1, val2)); // false
+
+
+
+
+
+// 4. Logical Operators 
 
 // AND Operator (&&) => Both Conditions must be true
-
 const age = 25;
 const gender = "male";
 if (age >= 18 && gender == "male") {
@@ -55,7 +69,6 @@ if (age >= 18 && gender == "male") {
 }
 
 // OR Operator (||) => Any one condition should be true
-
 const age1 = 23;
 const gend = "female";
 if (age >= 18 || gend == "male") {
@@ -82,7 +95,14 @@ const stat = offline ?? "online";
 
 console.log(stat); // "Online"
 
-// 5. ---- String Concatenation ----
+
+
+
+
+
+
+
+// 5. String Concatenation / Operators
 
 let firstName = "Yuvraj";
 let lastName = "Singh";
@@ -93,7 +113,11 @@ console.log(fullName);  // Yuvraj Singh
 
 
 
-// 6. ---- Ternary Operators ----
+
+
+
+
+// 6. Ternary Operators
 
 let ageBe = 16;
 let resultIs = (ageBe >= 18) ? "Adult" : "Minor";
@@ -103,7 +127,8 @@ console.log(resultIs);  // Minor
 
 
 
-// 7. ---- Bitwise Operators ----
+
+// 7. Bitwise Operators
 
 // i) Bitwise And (&) -> if both bits are 1 than we get 1
 console.log(5 & 3); // 1 (0101 & 0011 = 0001)
@@ -129,7 +154,10 @@ console.log(5 >> 1); // -3 (0101 >> 1 = 0010)
 
 
 
-// 8. ---- Typeof Operators ----
+
+
+
+// 8. Typeof Operators
 // This returns the type of its operand as a string.
 console.log(typeof 42);           // "number"
 console.log(typeof "Hello");      // "string"
@@ -141,7 +169,12 @@ console.log(typeof function () { }); // "function"
 
 
 
-// 9. ---- Unary Operators ----
+
+
+
+
+
+// 9. Unary Operators
 // Unary operator act on a single operand to perform operations like type conversion, value manipulation, or checking certain conditions.
 
 // i) The unary plus operator converts its operand into a number. If the operand is already a number, it remains unchanged.
