@@ -49,7 +49,7 @@ let vals = 1;
 
 switch (vals) {
     case 1:
-        console.log("Rusie");
+        console.log("Yuvraj");
         break;
     case 2:
         console.log("Yuvi");

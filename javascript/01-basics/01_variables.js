@@ -10,6 +10,12 @@ name = "Yuvraj"; // Assigning a value to the variable
 let age = 25;
 
 
+
+
+
+
+
+
 // Three types of variables in JavaScript
 
 // 1. Var 
@@ -63,7 +69,7 @@ console.log(pi); // Output: 3.14
 
 // console.log(gravity); // Error: gravity is not defined
 
-// Summary:
+// Summary
 // - Use 'var' for global scope variables (avoid if possible)
 // - Use 'let' for variables that may change value
 // - Use 'const' for variables that should not change value 

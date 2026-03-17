@@ -6,7 +6,7 @@
 // - directly stored in the variable's memory space
 // - immutable - can not be changed
 
-// 1. Number - integers, decimals, positive, negative, special values like NaN and Infinity
+// i) Number - integers, decimals, positive, negative, special values like NaN and Infinity
 
 let intNumb = 42; // Integer
 let floatNum = 3.14; // Decimal
@@ -19,7 +19,7 @@ console.log("Number Examples:");
 console.log(intNumb, floatNum, negativeNum, nanValue, infinityValue, negInfinityValue);
 
 
-// 2. Bigint - numbers larger than Number’s safe limit (9007199254740991)
+// ii) Bigint - numbers larger than Number’s safe limit (9007199254740991)
 
 console.log(Number.MAX_SAFE_INTEGER); // 9007199254740991
 
@@ -29,7 +29,7 @@ console.log(bigNum);
 // console.log(5n + 5); // error
 
 
-// 3. String - Sequence of characters enclosed in "", '', or `` (template literals)\
+// iii) String - Sequence of characters enclosed in "", '', or `` (template literals)\
 // Strings are immutable in JavaScript
 
 let strr1 = "Hello"; // double quotes
@@ -47,7 +47,7 @@ console.log(strrr); // Singh
 strrr[0] = "J";
 console.log(strrr[0]); // Y - not changed
 
-// 4. Symbol - Unique, immutable identifiers
+// iv) Symbol - Unique, immutable identifiers
 
 let id = Symbol("description");
 console.log(typeof id); // symbol
@@ -67,7 +67,7 @@ obj[symKey] = "value";
 console.log(obj[symKey]); // value
 console.log(symKey) // Symbol(key)
 
-// 5. Boolean - true or false
+// v) Boolean - true or false
 // 1 - true
 // 0 - false
 
@@ -76,7 +76,7 @@ let isFalse = false;
 
 console.log(typeof isTrue); // boolean
 
-// 6. undefined - variable declared but not assigned gets undefined automatically
+// vi) undefined - variable declared but not assigned gets undefined automatically
 
 let a;
 console.log(a); // undefined
@@ -86,10 +86,11 @@ console.log(q); // undefined
 
 // You can replace the whole value, not mutate it.
 
-// 7. null - represents "no value" or "empty value"
+// vii) null - represents "no value" or "empty value"
 
 let d = null;
 console.log(d); // null
+console.log(typeof d); // object type
 
 
 
@@ -98,15 +99,7 @@ console.log(d); // null
 
 
 
-
-
-
-
-
-
-
-
-// 2. Non Primitive Data Type
+// 2. Non Primitive (Reference) Data Type
 
 // - Stored in Heap Memory
 // - Copied by reference, not by value
